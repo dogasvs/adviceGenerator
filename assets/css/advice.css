@@ -1,0 +1,105 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(32, 39, 51, 1);
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  margin-block: 240px;
+}
+
+#randomAdvice {
+  width: 540px;
+  margin: 0 auto;
+  padding: 48px;
+  background-color: rgba(49, 58, 72, 1);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+#randomAdvice p {
+  margin-bottom: 24px;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 4.09px;
+  color: rgba(83, 255, 170, 1);
+}
+
+#randomAdvice h1 {
+  font-size: 28px;
+  color: rgba(206, 227, 233, 1);
+  margin-bottom: 40px;
+}
+
+#btn {
+  width: 64px;
+  background-color: rgba(83, 255, 170, 1);
+  padding: 20px;
+  border-radius: 70px;
+  position: absolute;
+  bottom: -30px;
+  left: 238px;
+}
+
+#btn:hover {
+  box-shadow: 0px 0px 40px 0px rgba(83, 255, 170, 1);
+  border: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.icons hr {
+  flex-grow: 1;
+  height: 1px; 
+  border: none; 
+  background-color: rgba(79, 93, 116, 1);
+}
+
+.simge {
+  margin: 0 auto;
+}
+
+@media(width <= 375px) {
+  .container {
+    margin-block: 140px;
+  }
+
+  #randomAdvice {
+    width: 343px;
+    padding: 24px;
+  }
+
+  #btn {
+    left: 140px;
+  }
+}
